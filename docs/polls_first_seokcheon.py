@@ -7,5 +7,18 @@ list_question = [
 
 list_answer =  ["좋음", "중간", "좋아지길"]
 
-for num_count in [0,2,4] : 
+
+for quest_count in [0,1,2,3] : 
+    print("{}. {}".format(quest_count+1,list_question[quest_count]))
+    for answer_count in [0,1,2] :
+        print(" {}.{}".format(answer_count+1,list_answer[answer_count]), end="")
+    print("")
+    if quest_count < 3 :
+        print("----------")
+    else :    
+        print("")
     
+
+
+    
+   

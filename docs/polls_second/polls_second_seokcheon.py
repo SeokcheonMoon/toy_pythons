@@ -24,6 +24,7 @@ list_answer =  ["좋음", "중간", "좋아지길"]
 
 list_statistics = [0,0,0]
 list_score = [3,2,1]
+
 for num_first in [0,1,2,3]:
     # str_question = list_question[num_first] 
     print("{}. {}".format(num_first+1, list_question[num_first]))
@@ -43,11 +44,19 @@ for num_first in [0,1,2,3]:
         print("----------")
     else :
         print("")
-    
 
-print("설문자 답항별 갯수 표시 : ({},".format(list_statistics))
 
-print(list_score[index])
+print("—--- 통 계 ----")
+print("설문자 답항별 갯수 표시 : {},".format(list_statistics))
 
-print("답항 가중 평균 : {}+{}+{}/ 3+2+1 =".format(list_statistics*list_score[index]),list_statistics*list_score[index],list_statistics*list_score[index])
+sum = 0
+result = 0
+for x in [0,1,2] :
+
+    sum =  sum  + list_statistics[x] 
+    result = result + list_statistics[x] * list_score[x]
+  
+
+print("답항 가중 평균 : {} ".format(result/sum))
+   
 

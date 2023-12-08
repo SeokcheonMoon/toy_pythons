@@ -47,7 +47,7 @@ def grade() :
         str_grade = "B"
     else :
         pass
-        str_grade = "C"
+        str_grade = "F"
 
     return str_grade
 

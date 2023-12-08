@@ -1,10 +1,7 @@
-
-
 #답항별 갯수표시
 list_score=[10,15,10,5]
 list_input=[2,1,1,2]
 list_answer=[2,1,1,2]
-
 
 
 # list_input 과 list_answer가 매칭시 점수 부여

@@ -68,3 +68,15 @@ solver = SolveQuiz()
 
 answers = quiz.test()
 solver.solve_result(answers)
+
+# self.correct = correct라는 구문은 SolveQuiz 클래스의 인스턴스가 생성될 때(즉, SolveQuiz()가 호출될 때) correct라는 매개변수를 입력받아
+# 인스턴스 내부 변수인 self.correct에 저장하는 역할을 합니다.
+
+# 이때 correct는 디폴트 값으로 [2,1,1,2]를 가지고 있습니다. 따라서 SolveQuiz()를 호출할 때 correct 매개변수를 따로 전달하지 않으면,
+# self.correct는 [2,1,1,2]라는 값을 가집니다. 만약 SolveQuiz([1,2,3,4])와 같이 호출한다면 self.correct는 [1,2,3,4]라는 값을 가집니다.
+
+# 이렇게 인스턴스 내부 변수(self.correct)를 사용하는 이유는 메소드 간에 데이터를 공유하기 위함입니다. self.correct는 SolveQuiz 클래스 내부의 모든 메소드에서 접근하고 수정할 수 있습니다.
+
+# self.correct 변수 없이도 코드를 정상적으로 진행할 수 있습니다. 하지만 이 경우, solve_result 메소드에서 정답 리스트를 직접 입력하거나
+# 다른 방법으로 정답 리스트를 받아와야 합니다. 그러나 이런 방식은 코드의 유연성을 떨어뜨리고, 메소드 간 데이터 공유가 어려워져서
+# 일반적으로는 인스턴스 변수를 사용하는 것이 더 바람직합니다.

@@ -1,3 +1,6 @@
+
+# 질문에 대한 답 고르기 function 만들기
+
 def test() :
     
     list_question = [
@@ -21,6 +24,7 @@ def test() :
         print("")      
     return num_print_answer
 
+# 결과값에 따른 점수 및 등급 매기기 function제작
 
 def solve_result(list_answer):
     correct=[2,1,1,2]

@@ -46,7 +46,7 @@ for num_count in [0,3,6,9]:
     print("")
     pass
 
-
+db.fruits_colors.find( {fruits_id : { $eq : ObjectId("657bf165a8da734b4f59f458") } } ) ;
 # # 리스트를 튜플로 변환하여 출력
 # tuple_answers = tuple(list_answers)
 # print("정답리스트 : {}".format(tuple_answers))
